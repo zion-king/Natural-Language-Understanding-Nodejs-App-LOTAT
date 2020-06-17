@@ -1,0 +1,17 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: naturallanguageunderstandingnodejsapplotat
+  buildpack: sdk-for-nodejs
+  command: npm start
+  disk_quota: 1G
+  memory: 128MB
+  domain: eu-gb.mybluemix.net
+  host: natural-language-understanding-nodejs-app-lotat
+  services:
+    - WatsonMachineLearning-11633
+    - Tone Analyzer-8023
+    - natural-language-und-naturallanguage-159236560019-
+  env:
+    OPTIMIZE_MEMORY: true
